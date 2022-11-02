@@ -1,11 +1,10 @@
--- // Variables 
-
+-- // Variables
 local Players = game:GetService("Players"):GetChildren()
 local RunService = game:GetService("RunService")
 local highlight = Instance.new("Highlight")
 highlight.Name = "Highlight"
 
--- // Main script
+-- // Main scripts
 
 for i, v in pairs(Players) do
     repeat wait() until v.Character
@@ -18,7 +17,7 @@ for i, v in pairs(Players) do
     end
 end
 
--- // Players joined
+-- // A player joined
 
 game.Players.PlayerAdded:Connect(function(player)
     repeat wait() until player.Character
@@ -31,10 +30,10 @@ game.Players.PlayerAdded:Connect(function(player)
     end
 end)
 
--- // Player left
+-- // A player left
 
-game.Players.PlayerRemoving:Connect(function(playeRemoved)
-    playerRemoved.Character:FindFirstChild("HumanoidRootPart").Highlight:Destroy()
+game.Players.PlayerRemoving:Connect(function(playerRemoved)
+    playerRemoved.Characeter:FindFirstChild("HumanoidRootPart").Highlight:Destroy()
 end)
 
 -- // Runservice
