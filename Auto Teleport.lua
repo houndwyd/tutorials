@@ -5,7 +5,7 @@ for i,v in pairs(areas) do
     table.insert(areasTable, v.Name)
 end
 
-local Matieral = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MatieralLua/master/Module.lua"))()
+local Matieral = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
 
 local UI = Matieral.load({
     Title = "Zone Teleporter",
